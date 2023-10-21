@@ -1,5 +1,7 @@
+
+import PokemonSearch from './PokemonSearch.jsx'
 function App(){
-  return <h1>Busqueda Pokemon</h1>
+  return <PokemonSearch />
 }
 
 export default App
