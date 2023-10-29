@@ -4,7 +4,7 @@
 
 body{
     display: flex;
-    background-color: #151220;
+    background-color: #3cc668;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -14,12 +14,18 @@ body{
 h1{
     -webkit-text-stroke: 4px #4070F4;
     color: yellow;
+    background-color: rgba(0, 0, 0, 0.322);
+    text-align: center;
+    width: 100%;
     font-size: 100px;
     margin-bottom: 5px;
     transform: rotate(1deg);
     transform-origin: center;
 }
 
+hr{
+  margin: 0px;
+}
 
 
 .inputPokemon{
@@ -51,10 +57,12 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #78C850;
+    background-image: url('https://archives.bulbagarden.net/media/upload/thumb/2/23/Pok%C3%A9_Balls_GL.png/250px-Pok%C3%A9_Balls_GL.png');
+    background-color: #98D8D8;
     border-radius: 25px 25px 0 25px;
-    padding: 10px 0px;
-    width: 100%;
+    padding: 10px 10px 10px 5px;
+    width: 99%;
+    
 }
 
 
@@ -67,9 +75,9 @@ h1{
 
 .tarjeta{
     margin: 10px 20px;
-    width: 320px;
+    width: 450px;
     border-radius: 25px;
-    background-color: antiquewhite;
+    background-color: rgb(218, 222, 230);
     border: 5px solid #4070F4;
 }
 
@@ -124,15 +132,14 @@ h1{
 
 .descripcion{
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     font-size: 20px;
     color: #000000;
     text-align: center;
     border-radius: 5px;
     background-color: lightslategray;
-    width: 100%;
-     min-height: 150px;
+    width: 100%;  
 }
 
 .descripcion ul{
@@ -143,8 +150,34 @@ h1{
 .descripcion ul li{
     width: 200px;
     padding: 4px;
-    border-radius: 10px;
 }
+
+.header_abilities{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.abilities_pokemon{
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+
+.abilities_pokemon > li{
+  background-color: rgb(27, 27, 75);
+  color: white;
+  
+}
+
+
+
+.abilities_pokemon > li:last-child{
+  border-radius: 0px 0px 10px 10px;
+  background-color: rgb(27, 27, 75);
+  color: white;
+  
+}
+
 
 /* Water */
 .water-type {
@@ -253,4 +286,47 @@ h1{
     background-color: #EE99AC; /* Pink */
     color: #333;
   }
+  
+
+  .contentButtons{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contentButtons .childButton{
+    background-color: #6f4ccf;
+    border: 5px #000000 solid;
+    border-radius: 10px;
+    font-size: 50px;
+    margin: 0px 10px;
+    margin-top: 2px;
+    height: 50px;
+  }
+
+  
+  .contentButtons .childButton:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.contentButtons .childButton:active{
+    transform: scale(0.9);
+    transition: transform 0.1s;
+}
+  
+.content_select{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #3cc668;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.content_select select{
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+
   
